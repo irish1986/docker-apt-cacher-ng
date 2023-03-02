@@ -114,7 +114,7 @@ jobs:
 
   build-and-push-docker-image:
     name: Build and Push Docker Image
-    needs: [test-integration, scan-image]
+    needs: [smoke-test-image, scan-image]
     runs-on: ubuntu-latest
 
     steps:
